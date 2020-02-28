@@ -33,7 +33,7 @@ def receiveFile(filename, conn, addr):
     for d in fileData:
         file.write(d)
     file.close()
-    print("{} uploaded from {}".format(filename, host[0]))
+    print("{} uploaded from {}".format(filename, host))
     return 1
 def sendBytes(filename, conn, addr):
     msg = conn.recv(64).decode("ascii")
